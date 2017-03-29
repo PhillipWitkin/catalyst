@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.oldwestbury.edu/sites/default/files/favicon.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Search | SUNY Old Westbury</title>
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_tmxTbcbglDYBiAhv7cvwzalxRwqbQ5-8umv0161jwLI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_hHKcWOvMiUMbq8smVMWACvxP__TfHZ82Ku-2DaLS0jY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_GQCq2HAgtIEDx00AZFmx-zduGRJaBrNx7ijQ0UHSu7c.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_mm1u_t_SD7umPkUPEu_LtmRW6d_EYXwsJ7aterWgOJ4.css" media="only screen" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www.oldwestbury.edu/sites/default/files/css/css_HCzPLGwep_r8CdI_Y-iNiSzh9wx8dDHFnTEQESFTZ34.css" media="screen" />
+<![endif]-->
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script>document.createElement( "picture" );</script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_zKC6wsxqjoRmTKNdDVcmdLOnhkAoI9AtNnnpDlsd9MQ.js"></script>
+<script src="https://www.oldwestbury.edu/sites/all/modules/lightbox2/js/lightbox.js?1488486047"></script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_guFGDuPO9xwrkA15w3VsEbjP06q_6IsOLkL45LgCWg4.js"></script>
+<script>var switchTo5x = false;</script>
+<script src="https://ws.sharethis.com/button/buttons.js"></script>
+<script>if (stLight !== undefined) { stLight.options({"publisher":"dr-915a4b71-9900-227f-16d9-836dddcc3c05","version":"4x","onhover":false}); }</script>
+<script>
+    jQuery(document).ready(function($){     
+      $('#om-maximenu-main-mega-menu li.om-leaf .om-maximenu-content').removeClass('om-maximenu-content-nofade');
+      $('#om-maximenu-main-mega-menu li.om-leaf .om-link').click(function(ev) {
+        ev.stopPropagation();
+        if($(this).parent().hasClass('open')) {
+          $(this).parent().removeClass('open');
+        }
+        else {
+          $('#om-maximenu-main-mega-menu li.om-leaf').removeClass('open');
+          $(this).parent().addClass('open');
+        }  
+        
+        $(this).parent().siblings().children('.om-maximenu-content').hide();        
+        $(this).siblings('.om-maximenu-content').toggle().pause();       
+        return false;
+      });
+      $('#om-maximenu-main-mega-menu .om-maximenu-content').click(function(ev) {
+        ev.stopPropagation();
+      });        
+      $('html').click(function() {
+        // Close any open menus.
+        $('#om-maximenu-main-mega-menu .om-maximenu-content:visible').each(function() {
+          $(this).parent().removeClass('open');
+          $(this).hide();
+        });
+      });      
+    }); 
+    </script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-51058226-3", {"cookieDomain":"auto"});ga("send", "pageview");</script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_8SJoF-6JzGpNyGI2rxRzXLCkPIKzRhrCsnIaG0oCL1A.js"></script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_y4WVRyw2WskPQJFL6NxHEJgtl7cL8dIKNP21GzWVVY4.js"></script>
+<script src="https://www.oldwestbury.edu/sites/default/files/js/js_DLtrURggB_3peKyvIp_W0TIRkZkF2Biqihgk3OvtiwI.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"oldwestbury","theme_token":"r-6ZFvUbrM2lFuu9RG2aj_nw4NHcswJ7VS7z54bhJck","js":{"sites\/all\/modules\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/picture\/picture.min.js":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"0":1,"sites\/all\/modules\/om_maximenu\/js\/om_maximenu.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"1":1,"https:\/\/ws.sharethis.com\/button\/buttons.js":1,"2":1,"3":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"4":1,"sites\/all\/modules\/facetapi\/facetapi.js":1,"sites\/all\/themes\/oldwestbury\/scripts\/eq.js":1,"sites\/all\/themes\/oldwestbury\/scripts\/eq_elements.js":1,"sites\/all\/themes\/adaptivetheme\/at_core\/scripts\/scalefix.js":1,"sites\/all\/themes\/adaptivetheme\/at_core\/scripts\/matchMedia.js":1,"sites\/all\/themes\/adaptivetheme\/at_core\/scripts\/matchMedia.addListener.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/om_maximenu\/css\/om_maximenu.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/om_maximenu\/skin\/no_style\/no_style.css":1,"sites\/all\/themes\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/oldwestbury\/css\/global.base.css":1,"sites\/all\/themes\/oldwestbury\/css\/global.styles.css":1,"sites\/all\/themes\/oldwestbury\/css\/om_maximenu.css":1,"sites\/all\/themes\/oldwestbury\/css\/custom.css":1,"public:\/\/adaptivetheme\/oldwestbury_files\/oldwestbury.responsive.layout.css":1,"public:\/\/adaptivetheme\/oldwestbury_files\/oldwestbury.responsive.styles.css":1,"public:\/\/adaptivetheme\/oldwestbury_files\/oldwestbury.lt-ie9.layout.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false},"urlIsAjaxTrusted":{"\/search":true},"facetapi":{"facets":[{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-employment-type","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_employment_type","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-policy-category","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_policy_category","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-category","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_category","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-event-type","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_event_type","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-event-location","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_event_location","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-degree-type","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_degree_type","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-school","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_school","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-field-department","searcher":"search_api@default_node_index","realmName":"block","facetName":"field_department","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":20,"id":"facetapi-facet-search-apidefault-node-index-block-type","searcher":"search_api@default_node_index","realmName":"block","facetName":"type","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"}]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"adaptivetheme":{"oldwestbury":{"layout_settings":{"bigscreen":"three-col-grail","tablet_landscape":"three-col-grail","tablet_portrait":"one-col-vert","smalltouch_landscape":"one-col-vert","smalltouch_portrait":"one-col-stack"},"media_query_settings":{"bigscreen":"only screen and (min-width:1025px)","tablet_landscape":"only screen and (min-width:769px) and (max-width:1024px)","tablet_portrait":"only screen and (min-width:481px) and (max-width:768px)","smalltouch_landscape":"only screen and (min-width:321px) and (max-width:480px)","smalltouch_portrait":"only screen and (max-width:320px)"}}}});</script>
+<!--[if lt IE 9]>
+<script src="https://www.oldwestbury.edu/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?om1qa1"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-search site-name-hidden atr-7.x-3.x site-name-suny-old-westbury section-search page-views">
+  <div id="skip-link" class="nocontent">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper">
+  <div id="page" class="page">
+
+          <div id="messages-wrapper">
+        <div id="messages"></div>      </div>
+    
+    
+    <div id="header-wrapper">
+      <div class="container clearfix">
+        <header id="header" class="clearfix" role="banner">
+
+                      <!-- start: Branding -->
+            <div id="branding" class="branding-elements clearfix">
+
+                              <div id="logo">
+                  <a href="/" title="Home page"><img class="site-logo" typeof="foaf:Image" src="https://www.oldwestbury.edu/sites/default/files/logo-slogan.png" alt="SUNY Old Westbury" /></a>                </div>
+              
+                              <!-- start: Site name and Slogan hgroup -->
+                <hgroup class="element-invisible" id="name-and-slogan">
+
+                                      <h1 class="element-invisible" id="site-name"><a href="/" title="Home page">SUNY Old Westbury</a></h1>
+                  
+                  
+                </hgroup><!-- /end #name-and-slogan -->
+              
+
+            </div><!-- /end #branding -->
+          
+        <div class="region region-header"><div class="region-inner clearfix"><nav id="block-menu-block-6" class="block block-menu-block no-title odd first block-count-1 block-region-header block-6"  role="navigation"><div class="block-inner clearfix">  
+  
+  <div class="menu-block-wrapper menu-block-6 menu-name-menu-user-navigation parent-mlid-0 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf menu-mlid-1816 menu-depth-1 menu-item-1816"><a href="http://connect.oldwestbury.edu" title="">connect.oldwestbury.edu</a></li></ul></div>
+
+  </div></nav><div id="block-views-exp-search-page-1" class="block block-views no-title even last block-count-2 block-region-header block--exp-search-page-1" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><form action="/search" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-query-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-query">
+ <input type="text" id="edit-query" name="query" value="bobby seale" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-search" name="" value="Search" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form></div>
+  </div></div></div></div>
+        </header>
+      </div>
+    </div>
+
+          <div id="nav-wrapper">
+        <div class="container clearfix">
+          <div id="menu-bar" class="nav clearfix"><section id="block-om-maximenu-om-maximenu-1" class="block block-om-maximenu menu-wrapper menu-bar-wrapper clearfix odd first last block-count-3 block-region-menu-bar block-om-maximenu-1" >  
+      <h2 class="element-invisible block-title">Main Mega Menu</h2>
+  
+   
+
+  <div id="om-maximenu-main-mega-menu" class="om-maximenu om-maximenu-no-style om-maximenu-block om-maximenu-column om-maximenu-block-down code-om-u1-1047649020">     
+            
+
+<div id="om-menu-main-mega-menu-ul-wrapper" class="om-menu-ul-wrapper">
+  <ul id="om-menu-main-mega-menu" class="om-menu">
+                
+  <li id="om-leaf-om-u1-1047649020-1" class="om-maximenu-submenu-links active-sub-menu-blocks-4 om-leaf first leaf-admissions">
+    <span class="om-link  link-admissions" >Admissions</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-21 first">
+      <div class="content"><div class="menu-block-wrapper menu-block-21 menu-name-menu-main-mega-menu parent-mlid-2463 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf has-children menu-mlid-2465 menu-depth-2 menu-item-2465"><a href="/admissions" title="">Admissions Home</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-24">
+  <h3 class="title">Get Started</h3>    <div class="content"><div class="menu-block-wrapper menu-block-24 menu-name-menu-main-mega-menu parent-mlid-2466 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2468 menu-depth-4 menu-item-2468"><a href="/admissions/freshmen" title="">Freshman Admissions</a></li><li class="leaf menu-mlid-2469 menu-depth-4 menu-item-2469"><a href="/admissions/transfer" title="">Transfer Admissions</a></li><li class="leaf menu-mlid-2470 menu-depth-4 menu-item-2470"><a href="/admissions/graduate" title="">Graduate Admissions</a></li><li class="leaf menu-mlid-2471 menu-depth-4 menu-item-2471"><a href="/admissions/international" title="">International Admissions</a></li><li class="leaf menu-mlid-2472 menu-depth-4 menu-item-2472"><a href="/academics/eop/admission" title="">EOP Admissions</a></li><li class="last leaf menu-mlid-3409 menu-depth-4 menu-item-3409"><a href="/admissions/readmission" title="">Readmission</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-block block-block-id-25">
+  <h3 class="title">Virtual Tour</h3>    <div class="content"><a href="http://www.youvisit.com" class="virtualtour_embed" title="Virtual Reality, Virtual Tour" data-platform="v" data-link-type="image" data-inst="63287" data-image-width="270" data-image-height="172" >Virtual Tour</a><script async="async" defer="defer" src="//www.youvisit.com/tour/Embed/js2"></script></div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-25 last">
+  <h3 class="title">Resources</h3>    <div class="content"><div class="menu-block-wrapper menu-block-25 menu-name-menu-main-mega-menu parent-mlid-2467 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2474 menu-depth-4 menu-item-2474"><a href="/admissions/non-degree" title="">Non-Degree Programs</a></li><li class="leaf menu-mlid-2476 menu-depth-4 menu-item-2476"><a href="/admissions/visit" title="">Visit Campus</a></li><li class="leaf menu-mlid-2473 menu-depth-4 menu-item-2473"><a href="/financial-aid" title="">Financial Aid</a></li><li class="leaf menu-mlid-2475 menu-depth-4 menu-item-2475"><a href="/bursar/tuition" title="">Tuition and Fees</a></li><li class="last leaf menu-mlid-3108 menu-depth-4 menu-item-3108"><a href="/open-house" title="">Spring 2017 Open House</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+                
+  <li id="om-leaf-om-u1-1047649020-2" class="om-maximenu-submenu-links active-sub-menu-blocks-4 om-leaf leaf-academics">
+    <span class="om-link  link-academics" >Academics</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-26 first">
+      <div class="content"><div class="menu-block-wrapper menu-block-26 menu-name-menu-main-mega-menu parent-mlid-2464 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf has-children menu-mlid-2477 menu-depth-2 menu-item-2477"><a href="/academics" title="">Academics Home</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-27">
+  <h3 class="title"><a href="/academics/departments" title="Schools & Departments">Schools & Departments</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-27 menu-name-menu-main-mega-menu parent-mlid-2478 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2481 menu-depth-4 menu-item-2481"><a href="/schools/arts-sciences" title="">School of Arts &amp; Sciences</a></li><li class="leaf menu-mlid-2482 menu-depth-4 menu-item-2482"><a href="/schools/business" title="">School of Business</a></li><li class="leaf menu-mlid-2483 menu-depth-4 menu-item-2483"><a href="/schools/education" title="">School of Education</a></li><li class="last leaf menu-mlid-3459 menu-depth-4 menu-item-3459"><a href="/schools/prof-studies" title="">School of Professional Studies</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-28">
+  <h3 class="title"><a href="/academics/offerings" title="Majors & Programs">Majors & Programs</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-28 menu-name-menu-main-mega-menu parent-mlid-2479 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2601 menu-depth-4 menu-item-2601"><a href="/academics/offerings" title="">Degree Programs</a></li><li class="leaf menu-mlid-2506 menu-depth-4 menu-item-2506"><a href="/honors" title="">Honors College</a></li><li class="leaf menu-mlid-2507 menu-depth-4 menu-item-2507"><a href="/academics/liberal-education" title="">Liberal Education Curriculum</a></li><li class="leaf menu-mlid-2514 menu-depth-4 menu-item-2514"><a href="/academics/eop" title="">EOP</a></li><li class="leaf menu-mlid-2509 menu-depth-4 menu-item-2509"><a href="/study-abroad" title="">Study Abroad</a></li><li class="leaf menu-mlid-2510 menu-depth-4 menu-item-2510"><a href="/call" title="">Civic Engagement</a></li><li class="last leaf menu-mlid-3508 menu-depth-4 menu-item-3508"><a href="/advance" title="">Winter/Summer Courses</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-29 last">
+  <h3 class="title">Resources</h3>    <div class="content"><div class="menu-block-wrapper menu-block-29 menu-name-menu-main-mega-menu parent-mlid-2480 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2511 menu-depth-4 menu-item-2511"><a href="http://libguides.oldwestbury.edu" title="">Library</a></li><li class="leaf menu-mlid-2512 menu-depth-4 menu-item-2512"><a href="/academics/registrar/catalogs" title="">College Catalog</a></li><li class="leaf menu-mlid-2516 menu-depth-4 menu-item-2516"><a href="/academics/calendar" title="">Academic Calendar</a></li><li class="leaf menu-mlid-2617 menu-depth-4 menu-item-2617"><a href="/academics/research" title="">Research</a></li><li class="leaf menu-mlid-2515 menu-depth-4 menu-item-2515"><a href="/academics/registrar" title="">Registrar</a></li><li class="leaf has-children menu-mlid-2513 menu-depth-4 menu-item-2513"><a href="/academics/support" title="">Academic Support Services</a></li><li class="last leaf menu-mlid-3494 menu-depth-4 menu-item-3494"><a href="/it/online-courses" title="">Online Learning &amp; Classes</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+                
+  <li id="om-leaf-om-u1-1047649020-3" class="om-maximenu-submenu-links active-sub-menu-blocks-4 om-leaf leaf-student-life">
+    <span class="om-link  link-student-life" >Student Life</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-30 first">
+      <div class="content"><div class="menu-block-wrapper menu-block-30 menu-name-menu-main-mega-menu parent-mlid-2489 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2517 menu-depth-3 menu-item-2517"><a href="/life" title="">Student Life Home</a></li><li class="leaf menu-mlid-2518 menu-depth-3 menu-item-2518"><a href="/life/residential" title="">Residential Life Home</a></li><li class="last leaf menu-mlid-2602 menu-depth-3 menu-item-2602"><a href="/life/commuter" title="">Commuter Life Home</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-31">
+  <h3 class="title">Programs</h3>    <div class="content"><div class="menu-block-wrapper menu-block-31 menu-name-menu-main-mega-menu parent-mlid-2490 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2519 menu-depth-3 menu-item-2519"><a href="/life/csli" title="">Student Activities</a></li><li class="leaf menu-mlid-2521 menu-depth-3 menu-item-2521"><a href="http://www.oldwestburypanthers.com/" title="">Athletics</a></li><li class="leaf menu-mlid-2522 menu-depth-3 menu-item-2522"><a href="/life/orientation" title="">Orientation</a></li><li class="leaf menu-mlid-2520 menu-depth-3 menu-item-2520"><a href="/life/csli/greek-life" title="">Greek Life</a></li><li class="leaf menu-mlid-2523 menu-depth-3 menu-item-2523"><a href="/departments/amstudies/student-media" title="">Student Media</a></li><li class="leaf menu-mlid-2524 menu-depth-3 menu-item-2524"><a href="/life/csli/student-government" title="">Student Government</a></li><li class="last leaf menu-mlid-3282 menu-depth-3 menu-item-3282"><a href="/life/csli/leadership" title="">Leadership</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-32">
+  <h3 class="title">Services</h3>    <div class="content"><div class="menu-block-wrapper menu-block-32 menu-name-menu-main-mega-menu parent-mlid-2491 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2531 menu-depth-3 menu-item-2531"><a href="/life/career" title="">Career Planning &amp; Development</a></li><li class="leaf menu-mlid-2530 menu-depth-3 menu-item-2530"><a href="/life/counseling" title="">Counseling &amp; Wellness</a></li><li class="leaf menu-mlid-2529 menu-depth-3 menu-item-2529"><a href="http://www.dineoncampus.com/oldwestbury/" title="">Dining</a></li><li class="leaf menu-mlid-2528 menu-depth-3 menu-item-2528"><a href="http://oldwestbury.bncollege.com/" title="">Bookstore</a></li><li class="leaf menu-mlid-2527 menu-depth-3 menu-item-2527"><a href="/life/student-health" title="">Student Health</a></li><li class="leaf menu-mlid-3100 menu-depth-3 menu-item-3100"><a href="/academics/support/OSSD" title="">Services for Students with Disabilities</a></li><li class="leaf menu-mlid-2525 menu-depth-3 menu-item-2525"><a href="/police" title="">University Police</a></li><li class="last leaf menu-mlid-2526 menu-depth-3 menu-item-2526"><a href="/maintenance/transportation" title="">Bus Schedule</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-33 last">
+  <h3 class="title"><a href="/it" title="Technology">Technology</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-33 menu-name-menu-main-mega-menu parent-mlid-2492 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2532 menu-depth-3 menu-item-2532"><a href="https://connect.oldwestbury.edu" title="">connect.oldwestbury portal</a></li><li class="leaf menu-mlid-2533 menu-depth-3 menu-item-2533"><a href="/it/online-courses" title="">Online Learning &amp; Classes</a></li><li class="leaf menu-mlid-2534 menu-depth-3 menu-item-2534"><a href="/it/e-mail" title="">Campus Mail</a></li><li class="leaf menu-mlid-2535 menu-depth-3 menu-item-2535"><a href="/it/help-desk" title="">Support Desk</a></li><li class="last leaf menu-mlid-2536 menu-depth-3 menu-item-2536"><a href="/it" title="">Information Technology</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+                
+  <li id="om-leaf-om-u1-1047649020-8" class="om-maximenu-submenu-links active-sub-menu-blocks-3 om-leaf leaf-about">
+    <span class="om-link  link-about" >About</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-34 first">
+  <h3 class="title"><a href="/about" title="General Information">General Information</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-34 menu-name-menu-main-mega-menu parent-mlid-2495 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2541 menu-depth-3 menu-item-2541"><a href="/about/mission" title="">Mission Statement</a></li><li class="leaf menu-mlid-2540 menu-depth-3 menu-item-2540"><a href="/about/president/strategic-plan" title="">Strategic Plan</a></li><li class="leaf menu-mlid-2539 menu-depth-3 menu-item-2539"><a href="/about/about-old-westbury" title="">Fast Facts</a></li><li class="leaf menu-mlid-3406 menu-depth-3 menu-item-3406"><a href="/about/consumer" title="">Consumer Information</a></li><li class="leaf menu-mlid-3334 menu-depth-3 menu-item-3334"><a href="/news" title="">News Releases</a></li><li class="last leaf menu-mlid-3335 menu-depth-3 menu-item-3335"><a href="/event-calendar" title="">Events Calendar</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-35">
+  <h3 class="title"><a href="/about/visit" title="Visit Campus">Visit Campus</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-35 menu-name-menu-main-mega-menu parent-mlid-2496 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2544 menu-depth-3 menu-item-2544"><a href="/about/visit" title="">Directions to Campus</a></li><li class="leaf menu-mlid-2545 menu-depth-3 menu-item-2545"><a href="/admissions/visit" title="">Admissions Visits</a></li><li class="leaf menu-mlid-2543 menu-depth-3 menu-item-2543"><a href="/about/visit" title="">Campus Map</a></li><li class="last leaf menu-mlid-2537 menu-depth-3 menu-item-2537"><a href="/contact-us" title="">Contact Us</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-36 last">
+  <h3 class="title"><a href="/about/administration" title="Administration">Administration</a></h3>    <div class="content"><div class="menu-block-wrapper menu-block-36 menu-name-menu-main-mega-menu parent-mlid-2494 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2547 menu-depth-3 menu-item-2547"><a href="/about/president" title="">President</a></li><li class="leaf menu-mlid-2548 menu-depth-3 menu-item-2548"><a href="/academics/academic-affairs" title="">Academic Affairs</a></li><li class="leaf menu-mlid-2549 menu-depth-3 menu-item-2549"><a href="/life/student-affairs" title="">Student Affairs</a></li><li class="leaf menu-mlid-2550 menu-depth-3 menu-item-2550"><a href="/admissions/office-enrollment-services" title="">Enrollment Services</a></li><li class="leaf menu-mlid-2551 menu-depth-3 menu-item-2551"><a href="/business" title="">Business &amp; Finance</a></li><li class="leaf menu-mlid-2552 menu-depth-3 menu-item-2552"><a href="/advancement" title="">Institutional Advancement</a></li><li class="last leaf menu-mlid-2553 menu-depth-3 menu-item-2553"><a href="/administration" title="">Administration &amp; Human Resources</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+                
+  <li id="om-leaf-om-u1-1047649020-9" class="om-maximenu-submenu-links active-sub-menu-blocks-3 om-leaf leaf-alumni">
+    <span class="om-link  link-alumni" >Alumni</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-40 first">
+      <div class="content"><div class="menu-block-wrapper menu-block-40 menu-name-menu-main-mega-menu parent-mlid-2486 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf has-children menu-mlid-2497 menu-depth-2 menu-item-2497"><a href="/alumni" title="">Alumni Home</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-41">
+  <h3 class="title">Information & Services</h3>    <div class="content"><div class="menu-block-wrapper menu-block-41 menu-name-menu-main-mega-menu parent-mlid-2498 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2554 menu-depth-4 menu-item-2554"><a href="/alumni/update-info" title="">Update Your Information</a></li><li class="last leaf menu-mlid-2555 menu-depth-4 menu-item-2555"><a href="/alumni/services" title="">Alumni Services</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-42 last">
+  <h3 class="title">Events</h3>    <div class="content"><div class="menu-block-wrapper menu-block-42 menu-name-menu-main-mega-menu parent-mlid-2499 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-3621 menu-depth-4 menu-item-3621"><a href="/alumni/events" title="">Alumni Events</a></li><li class="last leaf menu-mlid-2556 menu-depth-4 menu-item-2556"><a href="/homecoming/alumni-day" title="">Alumni Family Saturday</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+                
+  <li id="om-leaf-om-u1-1047649020-7" class="om-maximenu-submenu-links active-sub-menu-blocks-3 om-leaf last leaf-giving">
+    <span class="om-link  link-giving" >Giving</span>      <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-middle">
+       
+<div class="block block-menu_block block-menu_block-id-43 first">
+      <div class="content"><div class="menu-block-wrapper menu-block-43 menu-name-menu-main-mega-menu parent-mlid-2487 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf has-children menu-mlid-2502 menu-depth-2 menu-item-2502"><a href="/giving" title="">Giving Home</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-44">
+  <h3 class="title">Fundraising</h3>    <div class="content"><div class="menu-block-wrapper menu-block-44 menu-name-menu-main-mega-menu parent-mlid-2500 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-2561 menu-depth-4 menu-item-2561"><a href="/giving/ways-give" title="">Ways to Give</a></li><li class="last leaf menu-mlid-2559 menu-depth-4 menu-item-2559"><a href="/giving/faq" title="">FAQ</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+
+<div class="block block-menu_block block-menu_block-id-45 last">
+  <h3 class="title">Foundation</h3>    <div class="content"><div class="menu-block-wrapper menu-block-45 menu-name-menu-main-mega-menu parent-mlid-2501 menu-level-1">
+  <ul class="menu clearfix"><li class="first last leaf menu-mlid-2558 menu-depth-4 menu-item-2558"><a href="/giving/foundation" title="">Old Westbury College Foundation</a></li></ul></div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+    </div>
+  </div>
+
+  </li>
+
+
+
+
+          
+      </ul><!-- /.om-menu -->    
+</div><!-- /.om-menu-ul-wrapper -->   
+
+
+
+      </div><!-- /#om-maximenu-[menu name] -->   
+
+
+
+  </section></div>                            </div>
+      </div>
+    
+    
+
+
+    
+    <div id="content-wrapper">
+      <div class="container">
+        <div id="columns">
+          <div class="columns-inner clearfix">
+            <main id="content-column" role="main">
+              <div class="content-inner">
+
+                
+                
+                <section id="main-content">
+
+                  
+                                      <header id="main-content-header" class="clearfix">
+
+                                              <h1 id="page-title">Search</h1>
+                      
+                      
+                    </header>
+                  
+                                      <div id="content">
+                      <div id="block-system-main" class="block block-system no-title odd first last block-count-4 block-region-content block-main" >  
+  
+  <div class="view view-search view-id-search view-display-id-page_1 view-dom-id-cb49b0ad5aaf3f31b4f478d9bf4d20d4">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <article id="node-3687" class="node node-event node-promoted node-teaser article odd clearfix" about="/events/3687" typeof="sioc:Item foaf:Document" role="article">
+  
+      <header class="node-header">
+              <h2 class="node-title">
+          <a href="/events/3687" rel="bookmark">Black History Month Event: Bobby Seale, Co-Founder of The Black Panther Party</a>
+        </h2>
+          </header>
+  
+  
+  <div class="node-content">
+    <div class="field field-name-field-event-image field-type-image field-label-hidden view-mode-teaser"><div class="field-items"><figure class="clearfix field-item even"><a href="https://www.oldwestbury.edu/sites/default/files/event_img/B-Seale.jpg" rel="lightbox[field_event_image][]" title=""><img typeof="foaf:Image" class="image-style-medium" src="https://www.oldwestbury.edu/sites/default/files/styles/medium/public/event_img/B-Seale.jpg?itok=YGfIRVjc" width="220" height="146" alt="B Seale Portrait" /></a></figure></div></div><div class="field field-name-field-event-date field-type-datetime field-label-hidden view-mode-teaser"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-02-16T13:00:00-05:00">Thursday, February 16, 2017 - 1:00pm</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser"><div class="field-items"><div class="field-item even" property="content:encoded"><p> </p>
+<p>Please join us as Seale discusses the 1960s protest movement and draw lessons-learned for today!</p></div></div></div><div class="sharethis-buttons"></div>
+  </div>
+
+      <nav class="clearfix"><ul class="links inline"><li class="node-readmore first last"><a href="/events/3687" rel="tag" title="Black History Month Event: Bobby Seale, Co-Founder of The Black Panther Party">Read more<span class="element-invisible"> about Black History Month Event: Bobby Seale, Co-Founder of The Black Panther Party</span></a></li></ul></nav>
+  
+  
+  <span property="dc:title" content="Black History Month Event: Bobby Seale, Co-Founder of The Black Panther Party" class="rdf-meta element-hidden"></span></article>
+  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    <article id="node-3713" class="node node-article node-teaser article even clearfix" about="/news/3713" typeof="sioc:Item foaf:Document" role="article">
+  
+      <header class="node-header">
+              <h2 class="node-title">
+          <a href="/news/3713" rel="bookmark">Historic Activist Tells Students: &quot;Power to the People Is What It&#039;s Still About&quot;</a>
+        </h2>
+          </header>
+  
+      <footer class="submitted">
+            <p class="author-datetime"><span property="dc:date dc:created" content="2017-02-16T18:08:07-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="/people/kinanem" title="View user profile." rel="author" class="username" xml:lang="" about="/people/kinanem" typeof="sioc:UserAccount" property="foaf:name" datatype="">kinanem</a> on <time datetime="2017-02-16T18:08:07-0500" pubdate="pubdate">February 16, 2017 - 6:08pm</time></span></p>
+    </footer>
+  
+  <div class="node-content">
+    <div class="field field-name-field-article-image field-type-image field-label-hidden view-mode-teaser"><div class="field-items"><figure class="clearfix field-item even"><a href="https://www.oldwestbury.edu/sites/default/files/article_img/BHM-BSeale.png" rel="lightbox[field_article_image][]" title=""><img typeof="foaf:Image" class="image-style-thumbnail" src="https://www.oldwestbury.edu/sites/default/files/styles/thumbnail/public/article_img/BHM-BSeale.png?itok=ff9GPG6R" width="100" height="93" alt="Bobby Seale at SUNY Old Westbury" /></a></figure></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-teaser"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Black Panther Party Co-Founder Bobby Seale offered an insider's view of one of the most famous activist organizations in American history during his lecture to nearly 400 members of the campus community as part of the College's Black History Month program.</p>
+</div></div></div><div class="sharethis-buttons"></div>
+  </div>
+
+      <nav class="clearfix"><ul class="links inline"><li class="node-readmore first last"><a href="/news/3713" rel="tag" title="Historic Activist Tells Students: &quot;Power to the People Is What It&#039;s Still About&quot;">Read more<span class="element-invisible"> about Historic Activist Tells Students: &quot;Power to the People Is What It&#039;s Still About&quot;</span></a></li></ul></nav>
+  
+  
+  <span property="dc:title" content="Historic Activist Tells Students: &quot;Power to the People Is What It&#039;s Still About&quot;" class="rdf-meta element-hidden"></span></article>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  </div>                    </div>
+                  
+                  
+                  
+                </section>
+
+                
+                </div>
+              </main>
+
+                            <div class="region region-sidebar-second sidebar"><div class="region-inner clearfix"><section id="block-facetapi-zih8esyfkvwkemttztglem1grylaarmk" class="block block-facetapi odd first block-count-5 block-region-sidebar-second block-zih8esyfkvwkemttztglem1grylaarmk" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Filter by content type:</h2>
+  
+  <div class="block-content content"><div class="item-list item-list-facetapi-facetapi-links"><ul class="facetapi-facetapi-links facetapi-facet-type" id="facetapi-facet-search-apidefault-node-index-block-type"><li class="leaf even first"><a href="/search?query=bobby%20seale&amp;f[0]=type%3Aarticle" rel="nofollow" class="facetapi-inactive" id="facetapi-link--7">Article (1)<span class="element-invisible"> Apply Article filter </span></a></li><li class="leaf odd last"><a href="/search?query=bobby%20seale&amp;f[0]=type%3Aevent" rel="nofollow" class="facetapi-inactive" id="facetapi-link--8">Event (1)<span class="element-invisible"> Apply Event filter </span></a></li></ul></div></div>
+  </div></section><section id="block-facetapi-hgzszept0uy4pp9xr3revmyum74ai82d" class="block block-facetapi even block-count-6 block-region-sidebar-second block-hgzszept0uy4pp9xr3revmyum74ai82d" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Filter by event type:</h2>
+  
+  <div class="block-content content"><div class="item-list item-list-facetapi-facetapi-links"><ul class="facetapi-facetapi-links facetapi-facet-field-event-type" id="facetapi-facet-search-apidefault-node-index-block-field-event-type"><li class="leaf even first"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_type%3APublic%20event" rel="nofollow" class="facetapi-inactive" id="facetapi-link">Public Event (1)<span class="element-invisible"> Apply Public Event filter </span></a></li><li class="leaf odd last"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_type%3AWorkshop" rel="nofollow" class="facetapi-inactive" id="facetapi-link--2">Workshop (1)<span class="element-invisible"> Apply Workshop filter </span></a></li></ul></div></div>
+  </div></section><section id="block-facetapi-0reez0a0lb0x7qkrjvsohgamkbyqhjab" class="block block-facetapi odd last block-count-7 block-region-sidebar-second block-0reez0a0lb0x7qkrjvsohgamkbyqhjab" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Filter by location:</h2>
+  
+  <div class="block-content content"><div class="item-list item-list-facetapi-facetapi-links"><ul class="facetapi-facetapi-links facetapi-facet-field-event-location" id="facetapi-facet-search-apidefault-node-index-block-field-event-location"><li class="leaf even first"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_location%3Amultipurpos" rel="nofollow" class="facetapi-inactive" id="facetapi-link--3">multipurpos (1)<span class="element-invisible"> Apply multipurpos filter </span></a></li><li class="leaf odd"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_location%3Aroom" rel="nofollow" class="facetapi-inactive" id="facetapi-link--4">room (1)<span class="element-invisible"> Apply room filter </span></a></li><li class="leaf even"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_location%3Astudent" rel="nofollow" class="facetapi-inactive" id="facetapi-link--5">student (1)<span class="element-invisible"> Apply student filter </span></a></li><li class="leaf odd last"><a href="/search?query=bobby%20seale&amp;f[0]=field_event_location%3Aunion" rel="nofollow" class="facetapi-inactive" id="facetapi-link--6">union (1)<span class="element-invisible"> Apply union filter </span></a></li></ul></div></div>
+  </div></section></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+          <div id="footer-wrapper">
+        <div class="container clearfix">
+
+                      <!-- Three column 3x33 Gpanel -->
+            <div class="at-panel gpanel panel-display three-3x33 clearfix">
+                            <div class="region region-three-33-first"><div class="region-inner clearfix"><div id="block-block-2" class="block block-block no-title odd first last block-count-8 block-region-three-33-first block-2" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><ul><li><a href="https://www.facebook.com/sunyoldwestbury" style="text-decoration: underline; line-height: 1.538em;"><img alt="Facebook icon" src="https://www.oldwestbury.edu/sites/default/files/social_icons/facebook.png" title="SUNY Old Westbury on Facebook" /></a> <a href="https://twitter.com/sunyoldwestbury" style="text-decoration: underline; line-height: 1.538em;"><img alt="Twitter icon" src="https://www.oldwestbury.edu/sites/default/files/social_icons/twitter.png" title="SUNY Old Westbury on Twitter." /></a> <a href="https://www.instagram.com/sunyoldwestbury/" style="text-decoration: underline; line-height: 1.538em;"><img alt="Instagram icon" src="https://www.oldwestbury.edu/sites/default/files/social_icons/instagram.png" title="SUNY Old Westbury on Instagram" /></a> <span style="line-height: 1.538em;"><u><a href="https://www.linkedin.com/edu/school?id=22495"><img alt="LinkedIn icon" src="https://www.oldwestbury.edu/sites/default/files/social_icons/linkedin.png" title="SUNY Old Westbury on LinkedIn" /></a></u></span><span style="line-height: 1.538em;"> </span><span style="line-height: 1.538em;">  </span><span style="line-height: 1.538em;"><a href="http://www.suny.edu"><img alt="SUNY icon" src="https://www.oldwestbury.edu/sites/default/files/images/SUNY-logo.gif" style="width: 100px; float: left; height: 100px; border-width: 0px; border-style: solid;" /></a></span></li>
+<li><span style="font-size:16px;"><span style="color:#003300; line-height: 1.538em;">SUNY Old Westbury</span></span></li>
+<li><span style="color:#003300; line-height: 1.538em;">Old Westbury, Long Island, New York</span></li>
+<li><span style="color:#003300; line-height: 1.538em;">516-876-3000</span></li>
+</ul></div>
+  </div></div></div></div>              <div class="region region-three-33-second"><div class="region-inner clearfix"><div id="block-block-4" class="block block-block no-title odd first last block-count-9 block-region-three-33-second block-4" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><ul><li><a href="http://connect.oldwestbury.edu">ConnectOW Portal</a></li>
+<li><a href="http://oldwestbury.interviewexchange.com">Jobs &amp; Careers</a></li>
+<li><a href="https://www.oldwestbury.edu/about/visit">Directions to Campus</a></li>
+<li><a href="https://www.oldwestbury.edu/policies">Policies</a></li>
+<li><a href="https://www.oldwestbury.edu/police/emergencies">Emergency Info</a></li>
+</ul><div> </div>
+</div>
+  </div></div></div></div>              <div class="region region-three-33-third"><div class="region-inner clearfix"><div id="block-block-5" class="block block-block no-title odd first last block-count-10 block-region-three-33-third block-5" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><ul><li><a href="https://www.oldwestbury.edu/people">Directory</a></li>
+<li><a href="https://www.oldwestbury.edu/it">IT Services</a></li>
+<li><a href="https://www.oldwestbury.edu/pr/web-support">Web Support/Accessibility</a></li>
+<li><a href="https://www.oldwestbury.edu/contact-us">Contact Us </a></li>
+</ul><div><span style="font-size:10px;"><span style="font-size:12px;"><span style="line-height: 1.538em;">©</span></span>SUNY College at Old Westbury</span></div>
+</div>
+  </div></div></div></div>                          </div>
+          
+          
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://www.oldwestbury.edu/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cf3b3b0b02","applicationID":"17019566","transactionName":"blRbYEoFDEpVAkdaWVceeFdMDQ1XGxdaVkFKbklVXwE=","queueTime":0,"applicationTime":443,"atts":"QhNYFgIfH0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
