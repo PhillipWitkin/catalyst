@@ -1,6 +1,7 @@
 # Use PHP5.4 as default
 # Changed PHP handler from application/x-httpd-php54 to application/x-httpd-phpbeta on Mon Dec 14 22:43:51 MST 2015.
-AddHandler application/x-httpd-phpbeta .php
+
+# AddHandler application/x-httpd-phpbeta .php
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
