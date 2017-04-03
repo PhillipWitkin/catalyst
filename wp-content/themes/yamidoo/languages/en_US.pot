@@ -1,0 +1,508 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Yamidoo Magazine v2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"POT-Revision-Date: Sat Feb 27 2016 22:16:02 GMT+0200 (EET)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:7
+msgid "Error 404 - Nothing Found"
+msgstr ""
+
+#: ../archive.php:13
+msgid "Post Tagged with:"
+msgstr ""
+
+#: ../archive.php:14 ../archive.php:15 ../archive.php:16
+msgid "Archive for"
+msgstr ""
+
+#: ../archive.php:17
+msgid " Articles written by: "
+msgstr ""
+
+#: ../archive.php:18
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:19
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:19
+msgid "One Comment"
+msgstr ""
+
+#: ../comments.php:19
+#, php-format
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:23 ../comments.php:41
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../comments.php:23 ../comments.php:41
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:66
+msgid "Your Name"
+msgstr ""
+
+#: ../comments.php:72
+msgid "Your Email"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Your Website"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:84
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Log out?</a>"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:86
+msgid "Cancel"
+msgstr ""
+
+#: ../comments.php:87
+msgid "Submit"
+msgstr ""
+
+#: ../footer.php:31
+msgid "Designed by"
+msgstr ""
+
+#: ../footer.php:33
+msgid "Copyright"
+msgstr ""
+
+#: ../footer.php:33
+msgid "All Rights Reserved."
+msgstr ""
+
+#: ../loop.php:23
+msgid "by"
+msgstr ""
+
+#: ../loop.php:24 ../single.php:18
+#, php-format
+msgid "on %s at %s"
+msgstr ""
+
+#: ../loop.php:25 ../wpzoom-blocks.php:45 ../wpzoom-featured.php:58
+msgid "0 comments"
+msgstr ""
+
+#: ../loop.php:25 ../wpzoom-blocks.php:45 ../wpzoom-featured.php:58
+msgid "1 comment"
+msgstr ""
+
+#: ../loop.php:25 ../wpzoom-blocks.php:45 ../wpzoom-featured.php:58
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: ../loop.php:26 ../page.php:17 ../single.php:20 ../template-fullwidth.php:22 ..
+#: /wpzoom-blocks.php:46 ../wpzoom-featured.php:59
+msgid "Edit"
+msgstr ""
+
+#: ../page.php:30
+msgid "Sorry, no posts matched your criteria"
+msgstr ""
+
+#: ../pagination.php:12
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../pagination.php:13
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../search.php:5
+msgid "Search Results for:"
+msgstr ""
+
+#: ../search.php:16
+msgid "No results for:"
+msgstr ""
+
+#: ../searchform.php:3 ../searchform.php:3 ../searchform.php:3
+msgid "search..."
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Go"
+msgstr ""
+
+#: ../single.php:16
+msgid "Posted by"
+msgstr ""
+
+#: ../single.php:29
+msgid "Pages:"
+msgstr ""
+
+#: ../single.php:36
+msgid "<span class=\"tag-links\">Tags: "
+msgstr ""
+
+#: ../single.php:58
+msgid "Author:"
+msgstr ""
+
+#: ../single.php:74 ../template-fullwidth.php:36
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. Name of the template
+msgid "Blog"
+msgstr ""
+
+#: ../template-blog.php:25
+msgid "No Articles"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width"
+msgstr ""
+
+#: ../wpzoom-featured.php:64
+msgid "Read more..."
+msgstr ""
+
+#: ../functions/functions.php:125
+msgid "Drag me to the Sidebar"
+msgstr ""
+
+#: ../functions/functions.php:127
+msgid "WPZOOM: Tabs"
+msgstr ""
+
+#: ../functions/functions.php:156
+msgid "Tabber"
+msgstr ""
+
+#: ../functions/functions.php:161
+msgid ""
+"Place your widgets in the <strong>WPZOOM: Tabs Widget Area</strong> and have "
+"them show up here."
+msgstr ""
+
+#: ../functions/functions.php:181
+msgid "WPZOOM: Tabs Widget Area"
+msgstr ""
+
+#: ../functions/functions.php:183
+msgid ""
+"Build your tabbed area by placing widgets here.  !! DO NOT PLACE THE WPZOOM: "
+"TABS IN THIS AREA."
+msgstr ""
+
+#: ../functions/functions.php:250
+msgid "Related Posts"
+msgstr ""
+
+#: ../functions/functions.php:337
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../functions/functions.php:340
+#, php-format
+msgid "%s at %s"
+msgstr ""
+
+#: ../functions/functions.php:340 ../functions/functions.php:366
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions/functions.php:347
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/functions.php:366
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:93
+msgid "No commented posts yet"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:119
+msgid "Title:"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:124
+msgid "Since:"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:126
+msgid "Forever"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:127
+msgid "This Year"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:128
+msgid "This Month"
+msgstr ""
+
+#: ../functions/widgets/popularposts.php:133
+msgid "Posts To Display:"
+msgstr ""
+
+#: ../functions/wpzoom/wpzoom.php:155
+msgid "WPZOOM"
+msgstr ""
+
+#: ../functions/wpzoom/wpzoom.php:156
+msgid "Theme Options"
+msgstr ""
+
+#: ../functions/wpzoom/wpzoom.php:159
+msgid "Framework Update"
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:15
+msgid "WPZOOM Exporter"
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:38
+msgid "Upload"
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:40
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../functions/wpzoom/components/medialib-uploader.php:60
+msgid "View File"
+msgstr ""
+
+#: ../functions/wpzoom/components/video-thumb.php:86
+msgid ""
+"<strong>NOTICE!&nbsp;&nbsp;Unable to fetch video "
+"thumbnail</strong><br/>Either an invalid embed code was provided, or there "
+"is no thumbnail available for the specified video&hellip;<br/><small "
+"id=\"wpz_autothumb_remind\"><strong>REMINDER:</strong> You can always manually "
+"upload a featured image via the WordPress Media Uploader.</small>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:115
+msgid ""
+"SEO Settings were removed from WPZOOM Framework as it was announced in the "
+"previous update."
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:118
+msgid ""
+"Recommended replacement plugin is <a href=\"http://wordpress."
+"org/plugins/wordpress-seo/\" target=\"_blank\">Yoast SEO</a>."
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/admin.php:121
+msgid ""
+"If you're using our themes on a multisite install don't forget to notify "
+"your users about this change."
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:369
+#, php-format
+msgid ""
+"<p>This option has been deprecated in favor of the Site Icon setting in "
+"WordPress core. Please visit %s to configure your site icon.</p>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-fields.php:372
+msgid "General Settings"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:132
+msgid "For more information:"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:133
+msgid ""
+"<a href=\"http://www.wpzoom.com/support/documentation\" "
+"target=\"_blank\">Documentation and Tutorials</a>"
+msgstr ""
+
+#: ../functions/wpzoom/components/admin/settings-page.php:134
+msgid "<a href=\"http://www.wpzoom.com/support/\" target=\"_blank\">Support Desk</a>"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:69 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:81
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:70 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:72
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:71 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:84 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:121 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:123
+msgid "Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:73
+msgid "Add New"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:74
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:75
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:76
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:77
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:78
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:79
+msgid "No portfolio items found"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:80
+msgid "No portfolio items found in trash"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:120 ..
+#: /functions/wpzoom/components/portfolio/portfolio.php:122
+msgid "Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:124
+msgid "Search Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:125
+msgid "Popular Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:126
+msgid "All Portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:127
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:128
+msgid "View Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:129
+msgid "Update Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:130
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:131
+msgid "New Portfolio Name"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:132
+msgid "Separate portfolios with commas"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:133
+msgid "Add or remove portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/portfolio.php:134
+msgid "Choose from the most used portfolios"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/walker-category-filter.php:13
+#, php-format
+msgid "View all posts filed under %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/portfolio/walker-category-filter.php:29
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:31
+msgid "Customize the Shortcode"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:40
+msgid "Preview"
+msgstr ""
+
+#: ../functions/wpzoom/components/shortcodes/dialog.php:54
+msgid "Your version of theme does not yet support shortcodes."
+msgstr ""
+
+#. Name of the theme
+msgid "Yamidoo Magazine"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.wpzoom.com/themes/yamidoo/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.wpzoom.com"
+msgstr ""
